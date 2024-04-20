@@ -36,8 +36,8 @@ export default function BlogDetails(){
 
                     <p>{allBlogs.body}</p>
 
-                    {deleteLoad && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center" style={{backgroundColor: "#f1356d"}} onClick={handleDelete}>Delete Blog</button>}
-                    {!deleteLoad && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center" style={{backgroundColor: "#f1356d"}} onClick={handleDelete} disabled>Deleting Blog...</button>}
+                    {deleteLoad && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center mb-3" style={{backgroundColor: "#f1356d"}} onClick={handleDelete}>Delete Blog</button>}
+                    {!deleteLoad && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center mb-3" style={{backgroundColor: "#f1356d"}} onClick={handleDelete} disabled>Deleting Blog...</button>}
                 </article>
             )}
 
