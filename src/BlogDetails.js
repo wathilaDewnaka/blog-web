@@ -30,7 +30,7 @@ export default function BlogDetails(){
             {error && <div className="mx-3">{error}</div>}
 
             {allBlogs && (
-                <article>
+                <article className="p-2">
                     <h2 className="border-top pt-4 pb-2" >{allBlogs.title}</h2>
                     <p className="border-bottom py-2">Written by : {allBlogs.author}</p>
 

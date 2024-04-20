@@ -28,7 +28,7 @@ export default function NewBlog(){
     }
 
     return(
-        <div className="mx-auto my-4" style={{maxWidth: "400px"}}>
+        <div className="mx-auto my-4 p-3" style={{maxWidth: "400px"}}>
             <h2 className="mb-3 font-weight-bolder" style={{color: "#f1356d"}}>Add a New Blog</h2>
 
             <form onSubmit={submit}>

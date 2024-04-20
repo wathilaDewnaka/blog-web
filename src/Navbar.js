@@ -4,7 +4,7 @@ import './index.css'
 function Navbar() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light mx-auto border-bottom mb-3" style={{ maxWidth: "740px" }}>
+            <nav className="navbar navbar-expand-lg navbar-light mx-auto border-bottom mb-3 text-center" style={{ maxWidth: "740px" }}>
                 <div className="navbar-collapse justify-content-between">
                     <h2 className="font-weight-bold" style={{ color: "#f1356d" }}>Wathila Blogs</h2>
                     <ul className="navbar-nav">
