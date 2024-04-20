@@ -30,7 +30,6 @@ function useFetch(fetch_url){
         })
     },[fetch_url])
 
-    console.log(allData)
     
     return {allData, loading, error}
 

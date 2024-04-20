@@ -8,3 +8,11 @@
 .nav-link:hover{
   color: #f1356d;
 }
+
+body{
+  background: #f0f0f0;
+}
+
+input,textarea{
+  border: none;
+}

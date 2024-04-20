@@ -7,6 +7,7 @@ export default function NewBlog(){
     const [body,setBody] = useState("")
     const [author,setAuthor] = useState("")
     const [loading,setLoading] = useState(false)
+    const [password,setPassword] = useState("")
 
     const navigate = useNavigate()
 
@@ -14,7 +15,7 @@ export default function NewBlog(){
     function submit(e){
          e.preventDefault()
 
-         const blog = {title, author, body}
+         const blog = {title, author, body, password}
          setLoading(true)
          
          fetch("https://json-server-3-sn3w.onrender.com/allBlogs",{
@@ -33,14 +34,17 @@ export default function NewBlog(){
 
             <form onSubmit={submit}>
                 <label className="d-block text-align-left">Blog Title : </label>
-                <input className="d-block my-3 p-3" type="text" value={title} onChange={(e) => setTitle(e.target.value)} style={{width: "100%"}}required/>
+                <input className="d-block my-3 p-3 rounded" type="text" value={title} onChange={(e) => setTitle(e.target.value)} style={{width: "100%"}}required/>
 
                 <label className="d-block text-align-left">Blog Author : </label>
-                <input className="d-block my-3 p-3" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} style={{width: "100%"}}required/>
+                <input className="d-block my-3 p-3 rounded" type="text" value={author} onChange={(e) => setAuthor(e.target.value)} style={{width: "100%"}}required/>
 
                 <label className="d-block text-align-left">Blog Body : </label>
-                <textarea className="d-block my-3 p-3" value={body} onChange={(e) => setBody(e.target.value)} style={{width: "100%"}}required/>
+                <textarea className="d-block my-3 p-3 rounded" value={body} onChange={(e) => setBody(e.target.value)} style={{width: "100%"}}required/>
 
+                <label className="d-block text-align-left">*Password to Delete Blog : </label>
+                <input className="d-block my-3 p-3 rounded" type="text" value={password} onChange={(e) => setPassword(e.target.value)} style={{width: "100%"}}required/>
+                <p>Make sure to remember this to remove your blog in case !!!</p>
 
                 {!loading && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center" style={{backgroundColor: "#f1356d"}} type="submit">Add Blog</button>}
                 {loading && <button className="rounded-3 mx-auto text-white border-0 p-2 text-align-center" style={{backgroundColor: "#f1356d"}} disabled type="submit">Adding Blog...</button>}
