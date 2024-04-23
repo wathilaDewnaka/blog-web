@@ -18,7 +18,7 @@ export default function NewBlog(){
          const blog = {title, author, body, password}
          setLoading(true)
          
-         fetch("https://json-server-3-sn3w.onrender.com/allBlogs",{
+         fetch("https://wathilaDewnaka.github.io/blog-web/allBlogs",{
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(blog)

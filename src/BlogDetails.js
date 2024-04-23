@@ -20,7 +20,7 @@ export default function BlogDetails(){
         if (allBlogs.password === password){
             setWrong(false)
 
-            fetch("https://json-server-3-sn3w.onrender.com/allBlogs/" + allBlogs.id, {
+            fetch("https://wathilaDewnaka.github.io/blog-web/allBlogs/" + allBlogs.id, {
                 method: "DELETE"
             }).then(() => {
                 setDeleteLoad(false)

@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 function Homepage() {
 
-    const {allData: allBlogs, loading, error} = useFetch("https://json-server-3-sn3w.onrender.com/allBlogs")
+    const {allData: allBlogs, loading, error} = useFetch("https://wathilaDewnaka.github.io/blog-web/allBlogs")
 
     return (
         <div className="mx-auto" style={{maxWidth: "740px"}}>
